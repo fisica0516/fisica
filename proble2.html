@@ -1,0 +1,428 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Ejercicios</title>
+    <link rel="icon" href="img/icono.jpg"/>
+    <link rel="stylesheet" href="proble.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+  </head>
+  
+  <body>
+    <br>
+    <br>
+    <br>
+        <div id="wrapper">
+        <header>
+            <div class='define'>
+                <h1></h1>
+            </div>
+        </header>
+ 
+        
+    </div>
+ 
+    
+	
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Logotipo</h1>
+			</div>
+		
+				
+			</nav>
+		</div>
+		<div class="capa"></div>
+		<!--	--------------->
+		<input type="checkbox" id="btn-menu">
+		<div class="container-menu">
+			<div class="cont-menu">
+				<nav>
+					<a href="cirseri.html">Circuito en serie</a>
+					<a href="cirpara.html">Circuito paralelo</a>
+				
+					<a href="Leyohm.html">Ley de Ohm</a>
+					<a href="video.html">Videos</a>
+					<a href="contacto.html">Contacto</a>
+				</nav>
+				<label for="btn-menu">🆇</label>
+			</div>
+		</div>
+
+	</header>
+
+    <font color="white"><h1>circuito Paralelos</h1></font>
+<br>
+   <font color="white"><h2>Ejercicio 1.</h2>
+<p>Vamos a ver un ejemplo de cómo calcular la resistencia<br> equivalente de una asociación de resistencias en paralelo.
+<br><br>
+  Tres resistencias de 9, 18 y 30 ohmios se conectan en paralelo a una tensión de 90 V.<br> Calcular la resistencia total, la intensidad total y la intensidad que circula por cada resistencia.
+  <br><br>
+  Tenemos el siguiente circuito, donde las resistencias están conectadas en paralelo:
+  
+  </p></font>
+  <img src="img/problema1.png">
+ 
+          <style>
+              @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background:url(img/fondoweb.jpg);
+		background-size: 100vw 210vh;
+		background-repeat: no-repeat;
+        
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1800px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+  /*barra de color*/
+	::-webkit-scrollbar{
+		width: 20px;
+	}
+	::-webkit-scrollbar-track{
+		background: #dddddd;
+	}
+	::-webkit-scrollbar-thumb{
+		background: greenyellow;
+	}
+            body {  
+              background: url(img/fondoweb.jpg);
+              margin: 0;
+              font-family: 'Quicksand', sans-serif;
+              
+            }
+            .faq-container {    
+              max-width: 800px;
+              margin: 50px auto 0 auto;
+              padding: 2rem;
+            }
+            .faq-container h2 {
+              margin-bottom: 50px;
+              font-size: 2.5rem;
+              font-weight: 600;
+              text-align: center;
+              color: #364f6b;
+            }
+            details { 
+              background-color: #f6f8fa;
+              width: 100%;
+              margin-bottom: 1rem;   
+              border-radius: 8px;  
+              border: 1px solid #d8e0e9;
+              color: #364f6b;
+              position: relative;  
+            }
+            details summary {  
+              font-weight: 400;
+              font-size: 1.25rem;
+              padding: 1rem;
+              cursor: pointer;
+              list-style: none;
+            }
+            details p {
+              padding: 1rem;
+              margin: 0 1rem 1rem 1rem;
+              background: #f6f8fa;
+              border-left: 2px solid #364f6b;
+            }
+            
+            details:hover,
+            details[open] {
+              box-shadow: 5px 5px 15px #d9d9d9;
+            }
+            
+            details[open] {
+              background: #ffffff;
+            }
+            
+            details[open] summary {
+              font-weight: 600;
+            }
+            
+            details summary::before {
+              position: absolute;
+                content: "👇";    
+                font-size: 1.75rem;
+                top: 10px;
+                right: 16px;  
+            }
+            
+            details[open] summary::before {
+              -webkit-animation: rotate 0.6s ease-in-out both;
+                      animation: rotate-emoji 0.6s ease-in-out both;
+            }
+            
+            @-webkit-keyframes rotate-emoji {
+              0% {
+                -webkit-transform: rotate(0);
+                        transform: rotate(0);
+              }
+              100% {
+                -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg);
+              }
+            }
+            </style>
+          <div class="faq-container">
+            <details >
+            <summary>Respuestas del problema 1</summary>
+            <p>Vamos a calcular la resistencia equivalente de la asociación de resistencias en paralelo mediante su fórmula: <br> <img src="img/resu1.png">
+              <br>Sustituimos las resistencias por sus valores: <br> <img src="img/resu2.png">
+              <br>Obtenemos denominador común en el segundo miembro para poder sumar las fracciones: <br> <img src="img/resu3.png">
+              <br>Una vez tienen el mismo denominador, sumamos las fracciones: <br> <img src="img/resu4.png">
+              <br>Multiplicamos las fracciones en cruz, pasando el 90 multiplicando al primer miembro y Rt multiplicando al segundo miembro: <br> <img src="img/resu5.png">
+              <br>Ahora despejamos Rt, pasando el 18 dividiendo al segundo miembro y operamos: <br> <img src="img/resu6.png">
+              <br>La resistencia total o equivalente de las tres resistencias conectadas en paralelo es igual a 5 ohmios.
+              <br>Nos queda el siguiente circuito equivalente: <br> <img src="img/resu7.png">
+              <br>A partir de este circuito podemos calcular la intensidad total, aplicando la ley de Ohm: <br> <img src="img/resu8.png">
+              <br>Sustituimos los valores de tensión y resistencia y operamos: <br> <img src="img/resu9.png">
+              <br>La intensidad que pasa por cada resistencia es igual a la tensión que hay entre sus extremos, que en este caso es la tensión total, dividido entre el valor de la resistencia: <br> <img src="img/resu10.png">
+              <br>La intensidad que circula por la primera resistencia es: <br> <img src="img/resu11.png">
+              <br>La intensidad que circula por la segunda resistencia es: <br> <img src="img/resu12.png">
+              <br>La intensidad que circula por la tercera resistencia es: <br> <img src="img/resu13.png">
+              <br>Si sumamos cada una de estas intensidades, el resultado es igual a la intensidad total: <br> <img src="img/resu14.png"></p>
+              
+          </details>
+          </div>
+          <br>
+   <font color="white"><h2>Ejercicio 2.</h2>
+<p>2. DEL SIGUIENTE CIRCUITO
+  HALLAR LA RESISTENCIA EQUIVALENTE ENTRE LOS EXTREMOS A Y
+  B.
+<br>
+  Tenemos el siguiente circuito:</p></font>
+  <img src="img/problema2.png">
+  <div class="faq-container">
+    <details >
+   <summary>Respuestas del problema 2</summary>
+<p></p><br><img src="img/re1.png">
+
+<br><img src="img/re2.png">
+</p>
+  </details>
+  </div>
+
+</center>
+          <head>
+<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+.container__card{
+    max-width: -800px;/*posicion de dos*/
+    margin: auto;
+    margin-top: 0;
+    perspective: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 340px;
+    height: 380px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}

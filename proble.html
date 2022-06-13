@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Ejercicios</title>
+    <link rel="icon" href="img/icono.jpg"/>
+    <link rel="stylesheet" href="proble.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+  </head>
+  
+  <body>
+    <br>
+    <br>
+    <br>
+        <div id="wrapper">
+        <header>
+            <div class='define'>
+                <h1></h1>
+            </div>
+        </header>
+ 
+        
+    </div>
+ 
+    
+	
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Logotipo</h1>
+			</div>
+		
+				
+			</nav>
+		</div>
+		<div class="capa"></div>
+		<!--	--------------->
+		<input type="checkbox" id="btn-menu">
+		<div class="container-menu">
+			<div class="cont-menu">
+				<nav>
+					<a href="cirseri.html">Circuito en serie</a>
+					<a href="cirpara.html">Circuito paralelo</a>
+				
+					<a href="Leyohm.html">Ley de Ohm</a>
+					<a href="video.html">Videos</a>
+					<a href="contacto.html">Contacto</a>
+				</nav>
+				<label for="btn-menu">🆇</label>
+			</div>
+		</div>
+
+	</header>
+
+   
+  
+    <font color="white"><h1>circuito en Serie</h1></font>
+    <br>
+       <font color="white"><h2>Ejercicio 1.</h2></font>
+    <font color="white"><p>Se conectan en serie tres resistencias de 200 Ω, 140 Ω y 100 Ω a una red de 120 V.<br> Calcular la intensidad total, las tensiones, la potencia de cada resistencia, así como la potencia total.  <br>Tenemos el siguiente circuito:</p></font>
+      <br>
+    <img src="img/ejercicio1.png">
+     
+              <style>
+                @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background:url(img/fondoweb.jpg);
+		background-size: 100vw 210vh;
+		background-repeat: no-repeat;
+        
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1800px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+	/*barra de color*/
+	::-webkit-scrollbar{
+		width: 20px;
+	}
+	::-webkit-scrollbar-track{
+		background: #dddddd;
+	}
+	::-webkit-scrollbar-thumb{
+		background: greenyellow;
+	}
+                body {  
+                  background: url(img/fondoweb.jpg);
+                  margin: 0;
+                  font-family: 'Quicksand', sans-serif;
+                }
+                .faq-container {    
+                  max-width: 800px;
+                  margin: 50px auto 0 auto;
+                  padding: 2rem;
+                }
+                .faq-container h2 {
+                  margin-bottom: 50px;
+                  font-size: 2.5rem;
+                  font-weight: 600;
+                  text-align: center;
+                  color: #364f6b;
+                }
+                details { 
+                  background-color: #f6f8fa;
+                  width: 100%;
+                  margin-bottom: 1rem;   
+                  border-radius: 8px;  
+                  border: 1px solid #d8e0e9;
+                  color: #364f6b;
+                  position: relative;  
+                }
+                details summary {  
+                  font-weight: 400;
+                  font-size: 1.25rem;
+                  padding: 1rem;
+                  cursor: pointer;
+                  list-style: none;
+                }
+                details p {
+                  padding: 1rem;
+                  margin: 0 1rem 1rem 1rem;
+                  background: #f6f8fa;
+                  border-left: 2px solid #364f6b;
+                }
+                
+                details:hover,
+                details[open] {
+                  box-shadow: 5px 5px 15px #d9d9d9;
+                }
+                
+                details[open] {
+                  background: #ffffff;
+                }
+                
+                details[open] summary {
+                  font-weight: 600;
+                }
+                
+                details summary::before {
+                  position: absolute;
+                    content: "👇";    
+                    font-size: 1.75rem;
+                    top: 10px;
+                    right: 16px;  
+                }
+                
+                details[open] summary::before {
+                  -webkit-animation: rotate 0.6s ease-in-out both;
+                          animation: rotate-emoji 0.6s ease-in-out both;
+                }
+                
+				@-webkit-keyframes rotate-emoji {
+                  0% {
+                    -webkit-transform: rotate(0);
+                            transform: rotate(0);
+                  }
+                  100% {
+                    -webkit-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                  }
+				}
+                
+                </style>
+              <div class="faq-container">
+                <details >
+                <summary>Respuestas del problema 1</summary>
+                <p>Vamos a empezar calculando la resistencia total, que al estar las resistencias en serie, es igual a la suma de las tres resistencias: <br><img src="img/resultado1.png">
+                
+                  <br>Sustituimos cada resistencia por su valor y operamos:<br> <img src="img/resultado2.png">
+      <br> Ahora calculamos la intensidad total, que según la ley de Ohm, es igual a la tensión total entre la resistencia total:<br> <img src="img/resultado3.png"> 
+      <br>La tensión total es igual a los 120 V del generador y la resistencia total la acabamos de calcular. Sustituimos la tensión y la resistencia por sus valores y operamos: <br> <img src="img/resultado4.png">
+      <br>Ahora vamos a calcular la tensión en cada resistencia.
+      <br>La tensión en cada resistencia, según la ley de Ohm es igual a la intensidad que circule por cada resistencia, multiplicada por el valor de la resistencia:  <br> <img src="img/resultado5.png">
+      <br>Al estar en serie, la intensidad que circula por cada resistencia es la misma y es igual a la intensidad total:  <br> <img src="img/resultado6.png">
+      <br>Calculamos la tensión en R1, multiplicando el valor de la resistencia por la intensidad: <br> <img src="img/resultado7.png">
+      <br>Calculamos la tensión en la R2:  <br> <img src="img/resultado8.png">
+      <br>Y hacemos lo mismo con la R3:  <br> <img src="img/resultado9.png">
+      <br>Calculamos ahora la potencia consumida en cada resistencia, multiplicando la tensión en cada resistencia por la intensidad: <br> <img src="img/resultado10.png">
+      <br>La potencia en R1 es:<br> <img src="img/resultado11.png">
+      <br>La potencia consumida por R2 es:<br> <img src="img/resultado12.png">
+      <br>Y la potencia en R3: <br> <img src="img/resultado13.png">
+      <br>También podíamos haber calculado la potencia en cada resistencia multiplicando la intensidad al cuadrado por el valor de cada resistencia: <br> <img src="img/resultado14.png">
+      <br>La potencia total la calculamos multiplicando la tensión total por la intensidad total: <br> <img src="img/resultado15.png">
+      <br>Que a su vez, es la suma de las potencias de cada resistencia: <br> <img src="img/resultado16.png"></p>
+              </details>
+              </div>
+              <br>
+       <font color="white"><h2>Ejercicio 2.</h2></font>
+    <font color="white"><p>Se conectan tres resistencias en serie de 10 Ω, 5 Ω y 6 Ω a una fuente de alimentación.<br> La caída de tensión en la resistencia de 5 Ω es de 5 V. ¿Cuál es la tensión de la fuente de alimentación?
+    <br>
+      Tenemos el siguiente circuito:</p></font>
+      <br>
+      <img src="img/ejercicio2.png">
+      <div class="faq-container">
+        <details >
+       <summary>Respuestas del problema 2</summary>
+    <p>En este ejercicio tenemos que calcular la tensión total generada por la fuente de alimentación.
+    <br>La tensión total es igual a la suma de las tensiones en cada una de las resistencias<br> <img src="img/resul1.png">
+    
+    <br>La tensión en cada una de las resistencias es igual a la corriente que circula por ellas, multiplicada por el valor de cada resistencia: <br> <img src="img/resul2.png">
+    
+    <br>Por tanto, necesitamos conocer la intensidad que circula por cada una de ellas. Al estar conectadas en serie, al intensidad que circula por cada una de ellas es igual a la intensidad total, por lo que calculando alguna de ellas tendríamos todas: <br> <img src="img/resul3.png">
+    
+    <br>Podemos calcular la intensidad que circula por R2 gracias al dato de la caída de tensión en esa resistencia, ya que la intensidad en R2, es igual a la tensión en R2 entre el valor de R2: <br> <img src="img/resul4.png">
+    
+    <br>Sustituimos V2 y R2 por su valor y operamos: <br> <img src="img/resul5.png">
+    
+    <br>La intensidad por R2 es igual a 1 A, que como he comentado antes, es igual a la intensidad total y a la intensidad que circula por cada resistencia: <br> <img src="img/resul6.png">
+    
+    <br>Una vez tenemos la intensidad, ya podemos calcular la tensión V1, multiplicando la intensidad por R1: <br> <img src="img/resul7.png">
+    
+    <br>Sustituimos I1 y R1 por sus valores y operamos: <br> <img src="img/resul8.png">
+    
+    <br>Calculamos V3 de la misma forma: <br> <img src="img/resul9.png"><br> <img src="img/resul11.png">
+    
+    
+    <br>Una vez tenemos los valores de las tres tensiones, obtenemos el valor de la tensión realizando su suma: <br> <img src="img/resul10.png">
+    
+    <br>Por tanto, la fuente de alimentación genera una tensión de 21 V. </p>
+      </details>
+      </div>
+    
+    </center>
+              <head>
+                </body>
+                </html>
